@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".Main_Goodclassmate_submit">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="80dp"
+            android:background="@drawable/fireworks" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="新增記錄"
+            android:textSize="60dp" />
+        <ImageView
+            android:layout_width="83dp"
+            android:layout_height="80dp"
+            android:background="@drawable/fireworks" />
+    </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="欠款時間"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/startDate_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:text="日期"
+                android:clickable="true"
+                android:gravity="center" />
+            <TextView
+                android:id="@+id/startTime_TextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="時間"
+                android:ems="10"
+                android:clickable="true"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="欠款金額"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:background="@drawable/money"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/money_EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:maxLength="5"
+                android:gravity="center"
+                android:hint="$$$" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="還款時限"
+                android:layout_weight="1"
+                android:gravity="center" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/time" />
+
+            <EditText
+                android:id="@+id/dataend_EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Due Day"
+                android:inputType="number"
+                android:maxLength="5" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="還款對象"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/pikachu"
+            android:layout_gravity="center_vertical"/>
+            <EditText
+                android:id="@+id/user_EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:maxLength="5"
+                android:inputType="text"
+                android:gravity="center"
+                android:hint="Name" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="還款預警"
+                android:layout_weight="1"
+                android:gravity="center"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/scard"
+                android:layout_gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/warning_EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:ems="10"
+                android:inputType="number"
+                android:gravity="center"
+                android:maxLength="5"
+                android:hint="Day" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/submitbtn"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="Submit" />
+
+    </LinearLayout>
+</RelativeLayout>

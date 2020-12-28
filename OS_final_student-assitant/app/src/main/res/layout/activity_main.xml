@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Student Life Assistant"
+            android:textSize="30dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/clubtn"
+            android:layout_weight="1"
+            android:textSize="20sp"
+            android:onClick="clubtn"
+            android:text="記帳幫手"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/owebtn"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="owebtn"
+            android:text="欠債紀錄功能"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id = "@+id/curbtn"
+            android:layout_weight="1"
+            android:textSize="20dp"
+            android:onClick="curbtn"
+            android:text="課表功能"/>
+    </LinearLayout>
+</RelativeLayout>
