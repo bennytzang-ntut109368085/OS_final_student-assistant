@@ -24,6 +24,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Calendar;
 import java.util.HashMap;
 public class TimetableView extends LinearLayout {
     private static final int DEFAULT_ROW_COUNT = 12;
@@ -37,6 +38,8 @@ public class TimetableView extends LinearLayout {
     private static final int DEFAULT_HEADER_HIGHLIGHT_FONT_SIZE_DP = 15;
     private static final int DEFAULT_STICKER_FONT_SIZE_DP = 13;
 
+    Calendar calendar = Calendar.getInstance();
+    private int day = calendar.get(Calendar.DAY_OF_WEEK);
 
     private int rowCount;
     private int columnCount;
@@ -77,6 +80,41 @@ public class TimetableView extends LinearLayout {
         getAttrs(attrs);
         init();
     }
+    public int getday() {
+        switch (day) {
+            case Calendar.SUNDAY:
+                // Current day is Sunday
+                break;
+
+            case Calendar.MONDAY:
+                setHeaderHighlight(day - 1);
+                // Current day is Sunday
+                break;
+
+            case Calendar.TUESDAY:
+                setHeaderHighlight(day - 1);
+                // Current day is Sunday
+                break;
+
+            case Calendar.WEDNESDAY:
+                setHeaderHighlight(day - 1);
+                // Current day is Sunday
+                break;
+            case Calendar.THURSDAY:
+                setHeaderHighlight(day - 1);
+                // Current day is Monday
+                break;
+            case Calendar.FRIDAY:
+                setHeaderHighlight(day - 1);
+                // etc.
+                break;
+            case Calendar.SATURDAY:
+                // etc.
+                break;
+        }
+        return (day-1);
+    }
+
 
     private void getAttrs(AttributeSet attrs) {
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.TimetableView);
@@ -142,7 +180,6 @@ public class TimetableView extends LinearLayout {
         }
         return allSchedules;
     }
-
     public void add(ArrayList<Schedule> schedules) {
         add(schedules, -1);
     }

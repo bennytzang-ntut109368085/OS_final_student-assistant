@@ -1,5 +1,6 @@
 package com.example.os;
 import java.io.Serializable;
+import java.util.Calendar;
 
 public class Time implements Serializable{
     private int hour = 0;
@@ -9,6 +10,8 @@ public class Time implements Serializable{
         this.hour = hour;
         this.minute = minute;
     }
+
+
 
     public Time() { }
 

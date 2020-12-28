@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class Main_Timetable extends AppCompatActivity implements View.OnClickListener{
     private Context context;
@@ -21,7 +22,6 @@ public class Main_Timetable extends AppCompatActivity implements View.OnClickLis
     private Button clearBtn;
     private Button saveBtn;
     private Button loadBtn;
-
     private TimetableView timetable;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,8 @@ public class Main_Timetable extends AppCompatActivity implements View.OnClickLis
         loadBtn = findViewById(R.id.load_btn);
 
         timetable = findViewById(R.id.timetable);
-        timetable.setHeaderHighlight(2);
+
+        timetable.getday();
         initView();
     }
 
