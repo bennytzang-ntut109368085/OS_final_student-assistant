@@ -76,7 +76,7 @@
                 android:layout_weight="1"
                 android:ems="10"
                 android:gravity="center"
-                android:hint="100"
+                android:hint="$$$"
                 android:inputType="numberDecimal" />
         </LinearLayout>
 
@@ -145,6 +145,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#4E62DA"
                 android:text="Insert" />
 
             <Button
@@ -152,6 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#7787DF"
                 android:text="Modify" />
 
             <Button
@@ -159,6 +161,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#A5B1F3"
                 android:text="Delete" />
 
         </LinearLayout>
@@ -171,16 +174,18 @@
 
             <Button
                 android:id="@+id/btCal"
-                android:layout_width="150dp"
+                android:layout_width="10dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#26A0B1"
                 android:text="Calculate" />
 
             <Button
                 android:id="@+id/btn_Clear"
-                android:layout_width="150dp"
+                android:layout_width="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#5DADD1"
                 android:text="Clear" />
 
             <Button
@@ -188,6 +193,7 @@
                 android:layout_width="8dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:background="#8ABDE6"
                 android:onClick="mail"
                 android:text="Close"
                 android:textSize="12sp" />

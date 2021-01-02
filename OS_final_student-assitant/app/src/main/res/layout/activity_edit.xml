@@ -35,6 +35,12 @@
         <include layout="@layout/time_box"/>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="480dp"
+        android:gravity="center"
+        android:background="@drawable/together">
+        </LinearLayout>
 
 
 </LinearLayout>

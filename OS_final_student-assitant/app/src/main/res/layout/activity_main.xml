@@ -15,36 +15,42 @@
 
         <TextView
             android:id="@+id/txt"
+            android:background="@drawable/dat"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="150dp"
             android:layout_weight="1"
             android:gravity="center"
             android:text="Student Life Assistant"
-            android:textSize="30dp" />
+            android:textSize="40dp" />
 
         <Button
+            android:id="@+id/clubtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id = "@+id/clubtn"
             android:layout_weight="1"
-            android:textSize="20sp"
+            android:background="#BB8263"
             android:onClick="clubtn"
-            android:text="記帳幫手"/>
+            android:text="記 帳 幫 手"
+            android:textSize="35dp" />
+
         <Button
+            android:id="@+id/owebtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id = "@+id/owebtn"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:background="#E9876F"
             android:onClick="owebtn"
-            android:text="欠債紀錄功能"/>
+            android:text="欠 債 紀 錄 功 能"
+            android:textSize="35dp" />
+
         <Button
+            android:id="@+id/curbtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id = "@+id/curbtn"
             android:layout_weight="1"
-            android:textSize="20dp"
+            android:background="#EEAE94"
             android:onClick="curbtn"
-            android:text="課表功能"/>
+            android:text="課 表 功 能"
+            android:textSize="35dp" />
     </LinearLayout>
 </RelativeLayout>
